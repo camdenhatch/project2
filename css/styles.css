@@ -116,3 +116,63 @@ body {
     padding: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
+
+.players-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.player-card {
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.player-name {
+    font-size: 18px;
+    color: #333333;
+}
+
+.player-stats {
+    font-size: 16px;
+    color: #555555;
+    margin-top: 5px;
+}
+
+/* styles.css */
+body,
+html {
+    height: 100%;
+    margin: 0;
+}
+
+.bg-video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    background: no-repeat;
+    background-size: cover;
+}
+
+#loginForm {
+    margin-top: 50px;
+}
+
+#newsContent {
+    display: none; // Initially hide the news content
+}
+
+.bg-video iframe {
+    width: 100%;
+    height: 400px;
+}
