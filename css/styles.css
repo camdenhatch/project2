@@ -1,0 +1,118 @@
+/* Importing Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Basic Body Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+/* Headers using Anton for a sporty vibe */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Anton', sans-serif;
+    color: #333333;
+}
+
+/* Primary color for important components */
+a,
+.btn-primary,
+.btn-link {
+    color: #1dbab4;
+}
+
+/* Navigation and Footer Styling */
+nav,
+footer {
+    background-color: #333333;
+    color: #ffffff;
+}
+
+/* Bootstrap Button Customization */
+.btn-primary {
+    background-color: #1dbab4;
+    border-color: #007bff;
+}
+
+/* Link hover effect */
+a:hover {
+    color: #007bff;
+}
+
+/* Custom classes for specific tweaks */
+.bg-primary {
+    background-color: #1dbab4 !important;
+    color: #ffffff;
+}
+
+/* Sticky footer styles */
+html,
+body {
+    height: 100%;
+    /* Set body and html to full height */
+    margin: 0;
+}
+
+#content {
+    flex: 1 0 auto;
+    padding: 20px;
+    /* Optional: it adds some spacing inside the content area */
+}
+
+footer {
+    flex-shrink: 0;
+    /* Prevents the footer from shrinking */
+}
+
+/* Use Flexbox on the body to manage layout */
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.team {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.team img {
+    width: 100px;
+    /* Adjust size as needed */
+    height: auto;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.player {
+    border: 1px solid #ddd;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+.results-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.player-card {
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
